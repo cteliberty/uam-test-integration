@@ -1,0 +1,21 @@
+{
+  "name": "uam-test-integration",
+  "version": "1.0.0",
+  "description": "Test to evaluate an integrator in the UAM team",
+  "main": "index.js",
+  "author": "Clément Thoret",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "sass": "^1.68.0",
+    "sass-loader": "^13.3.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
+  }
+}
