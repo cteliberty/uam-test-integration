@@ -1,0 +1,22 @@
+.uam_footerLinkList {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  &_link {
+    color: $color-white;
+    @include fontSize(18px, 16px);
+
+    &:hover {
+      color: $color-orange;
+    }
+  }
+
+  @media screen and (min-width: $screen-s-min) {
+    &_link {
+      color: $color-white;
+      @include fontSize(16px, 26px);
+    }
+  }
+}

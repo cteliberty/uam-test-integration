@@ -1,0 +1,34 @@
+.uam_btn {
+  padding: 0 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  outline: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 15px $color-light-black;
+  color: $color-white;
+  background-color: $color-grey;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+
+  [class^='uam_icon-'],
+  [class*=' uam_icon-'] {
+    font-size: 24px;
+  }
+
+  &:hover {
+    background-color: $color-black;
+    color: $color-white;
+  }
+
+  &[data-color='orange'] {
+    background-color: $color-orange;
+
+    &:hover {
+      background-color: $color-dark-orange;
+    }
+  }
+}

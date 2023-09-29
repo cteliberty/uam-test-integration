@@ -1,0 +1,84 @@
+&_filters {
+  &_list {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: outside none;
+  }
+
+  &_item,
+  &_item:before {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &_item {
+    margin: 14px 17px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    text-transform: uppercase;
+    background-color: $color-medium-white;
+    cursor: pointer;
+    font-size: 15px;
+
+    &:before,
+    &:after {
+      display: inline-block;
+      font-family: $font-icon;
+    }
+
+    &:before {
+      content: "\e907";
+      color: $color-white;
+      font-size: 0;
+    }
+
+    &:after {
+      padding-left: 8px;
+      font-size: 20px;
+    }
+
+    &.active,
+    &:hover {
+      background-color: $color-orange;
+      color: $color-white;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    }
+
+    &.active {
+      padding: 0 20px 0 15px;
+
+      &:before {
+        padding-right: 8px;
+        font-size: 25px;
+      }
+    }
+
+    &[data-filter="winter"] {
+      &:after {
+        content: "\e902";
+      }
+    }
+
+    &[data-filter="summer"] {
+      &:after {
+        content: "\e905";
+      }
+    }
+
+    &[data-filter="family"] {
+      &:after {
+        content: "\e900";
+      }
+    }
+
+    &[data-filter="free"] {
+      &:after {
+        content: "Free";
+        font-size: 13px;
+        font-family: $font-Montserrat;
+      }
+    }
+  }
+}

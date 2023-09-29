@@ -1,0 +1,35 @@
+.uam_footerDomaine {
+  &_logo {
+    margin-bottom: 20px;
+
+    img {
+      max-height: 50px;
+    }
+  }
+
+  &_description {
+    margin-top: 20px;
+
+    p {
+      @include fontSize(15px, 24px);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: $screen-s-min) {
+    &_logo {
+      margin-bottom: 8px;
+    }
+
+    &_description {
+      margin-top: 8px;
+
+      p {
+        @include fontSize(16px, 26px);
+      }
+    }
+  }
+}

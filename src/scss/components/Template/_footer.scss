@@ -1,0 +1,116 @@
+.uam_footer {
+  margin-top: -32px;
+  margin-bottom: -32px;
+  color: $color-white;
+  position: relative;
+  padding-top: 38px;
+  font-family: $font-Montserrat;
+  background-color: transparent;
+  padding-bottom: 31px;
+  text-align: center;
+  margin-top: 40px;
+
+  &_container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &_content {
+    margin-bottom: 32px;
+  }
+
+  &_information {
+    margin-bottom: 36px;
+  }
+
+  &_domaine {
+    margin-bottom: 24px;
+  }
+
+  &_payment {
+    margin-top: 24px;
+  }
+
+  &_links {
+    margin-top: 36px;
+  }
+
+  &_footer {
+    margin-top: 32px;
+  }
+
+  &_triangle {
+    background-color: $color-grey;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 0;
+      width: 0;
+      border-right: 94vw solid transparent;
+      border-bottom: 200px solid rgba(0, 0, 0, 0.3);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 0;
+      width: 0;
+      border-bottom: 543px solid rgba(255, 255, 255, 0.2);
+      border-left: 40vw solid transparent;
+    }
+  }
+
+  @media screen and (min-width: $screen-s-min) {
+    text-align: left;
+
+    &_content {
+      display: flex;
+      column-gap: 16px;
+    }
+
+    &_information {
+      max-width: 340px;
+      margin-bottom: 0;
+    }
+
+    &_links {
+      flex: auto;
+      margin-top: 0;
+      display: flex;
+      justify-content: flex-end;
+      column-gap: 16px;
+    }
+
+    &_triangle {
+      &::after {
+        border-bottom-width: 400px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $screen-m-min) {
+    &_links {
+      column-gap: 25%;
+    }
+  }
+
+  @media screen and (min-width: $screen-l-min) {
+    &_information {
+      max-width: 400px;
+    }
+  }
+}
+
+.uam_reinsurance + .uam_footer {
+  margin-top: 60px;
+}

@@ -1,0 +1,25 @@
+.uam_footerPayment {
+  &_title {
+    margin-bottom: 16px;
+  }
+
+  &_logoList {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    row-gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $screen-s-min) {
+    &_title {
+      margin-bottom: 18px;
+    }
+
+    &_logoList {
+      justify-content: flex-start;
+      column-gap: 18px;
+      row-gap: 18px;
+    }
+  }
+}

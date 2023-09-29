@@ -1,0 +1,9 @@
+.uam_footerTitle {
+  @include fontStyle(900, 22px, 20px);
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media screen and (min-width: $screen-s-min) {
+    @include fontSize(24px, 32px);
+  }
+}

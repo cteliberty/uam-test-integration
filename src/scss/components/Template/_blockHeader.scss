@@ -1,0 +1,199 @@
+.uam_blockHeader {
+  $self: &;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  min-height: 550px;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+  }
+
+  &:before {
+    z-index: 1;
+    top: 45px;
+    right: -58%;
+    width: 120%;
+    height: 220%;
+    background: rgba($color-white, 0.5);
+    transform: skewY(-70deg);
+  }
+
+  &:after {
+    bottom: -20%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(
+      180deg,
+      rgba($color-white, 0) -7%,
+      $color-white 32%
+    );
+    backdrop-filter: blur(10px);
+    transform: skewY(20deg);
+  }
+
+  &_backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+  }
+
+  &_container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &_label {
+    @include fontStyle(700, 20px, 1.2);
+    display: none;
+    position: absolute;
+    bottom: 160px;
+    left: 0;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    color: $color-white;
+    font-family: $font-Eagle;
+
+    i {
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+  }
+
+  &_title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 608px;
+    max-width: 100%;
+  }
+
+  &_selector {
+    margin-top: 100px;
+
+    #selectorv2 {
+      bottom: 50px !important;
+    }
+  }
+
+  .rpbox {
+    background-color: rgba($color-grey, 0.2);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  &-cms {
+    margin-bottom: -115px;
+    min-height: 712px;
+
+    #{$self}_title {
+      padding-top: 60px;
+    }
+
+    + div {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &#{$self}-cmsWebcams:after {
+    transform: skewY(-25deg);
+  }
+
+  &#{$self}-cmsDomain:before {
+    top: -80px;
+    right: inherit;
+    left: -280px;
+    width: 320px;
+    height: 100%;
+    transform: skewX(5deg);
+  }
+
+  @media screen and (min-width: $screen-xs-min) {
+    &:after {
+      bottom: -16%;
+      height: 41%;
+      transform: skewY(5deg);
+    }
+
+    &_container {
+      padding-left: 50px;
+    }
+
+    &_label {
+      display: block;
+      width: 540px;
+      text-align: center;
+      bottom: auto;
+      top: 0;
+      left: auto;
+      right: 100%;
+      transform-origin: top right;
+    }
+
+    &_title {
+      display: flex;
+      min-height: 675px;
+      align-items: center;
+    }
+
+    &-selector {
+      min-height: 675px;
+
+      #selectorv2 {
+        bottom: 10px !important;
+      }
+    }
+
+    &-cms {
+      min-height: 800px;
+
+      #{$self}_title {
+        padding-top: 30px;
+      }
+    }
+
+    &#{$self}-cmsWebcams:after {
+      transform: skewY(-5deg);
+    }
+
+    &#{$self}-cmsDomain:before {
+      left: -160px;
+      transform: skewX(15deg);
+    }
+  }
+
+  @media screen and (min-width: $screen-s-min) {
+    &:before {
+      top: -80px;
+      height: 120%;
+      transform: skewY(-60deg);
+    }
+  }
+
+  @media screen and (min-width: $screen-m-min) {
+    &:before {
+      transform: skewY(-50deg);
+    }
+
+    &_container {
+      padding-left: 150px;
+    }
+  }
+
+  @media screen and (min-width: $screen-l-min) {
+    .rpbox {
+      border-radius: 40px;
+    }
+  }
+}

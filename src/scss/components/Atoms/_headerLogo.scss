@@ -1,0 +1,12 @@
+.uam_headerLogo {
+  width: 125px;
+  display: inline-block;
+
+  @media screen and (min-width: $screen-m-min) {
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width: $screen-xl-min) {
+    margin-right: 70px;
+  }
+}

@@ -1,0 +1,20 @@
+.uam_footerLinks {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &_title {
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: $screen-s-min) {
+    margin-bottom: 0;
+
+    &_title {
+      margin-bottom: 12px;
+    }
+  }
+}

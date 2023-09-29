@@ -1,0 +1,168 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?yf6pny') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?yf6pny') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?yf6pny##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="stgv-"], [class*=" stgv-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.stgv-telepherique {
+  &:before {
+    content: $stgv-telepherique;
+  }
+}
+.stgv-warning {
+  &:before {
+    content: $stgv-warning;
+  }
+}
+.stgv-star {
+  &:before {
+    content: $stgv-star;
+  }
+}
+.stgv-snow {
+  &:before {
+    content: $stgv-snow;
+  }
+}
+.stgv-beginer {
+  &:before {
+    content: $stgv-beginer;
+  }
+}
+.stgv-line_arrow {
+  &:before {
+    content: $stgv-line_arrow;
+  }
+}
+.stgv-family {
+  &:before {
+    content: $stgv-family;
+  }
+}
+.stgv-persone {
+  &:before {
+    content: $stgv-persone;
+  }
+}
+.stgv-flash {
+  &:before {
+    content: $stgv-flash;
+  }
+}
+.stgv-plain {
+  &:before {
+    content: $stgv-plain;
+  }
+}
+.stgv-train {
+  &:before {
+    content: $stgv-train;
+  }
+}
+.stgv-car {
+  &:before {
+    content: $stgv-car;
+  }
+}
+.stgv-calendar {
+  &:before {
+    content: $stgv-calendar;
+  }
+}
+.stgv-menu {
+  &:before {
+    content: $stgv-menu;
+  }
+}
+.stgv-cross {
+  &:before {
+    content: $stgv-cross;
+  }
+}
+.stgv-cart {
+  &:before {
+    content: $stgv-cart;
+  }
+}
+.stgv-user {
+  &:before {
+    content: $stgv-user;
+  }
+}
+.stgv-help {
+  &:before {
+    content: $stgv-help;
+  }
+}
+.stgv-exchange {
+  &:before {
+    content: $stgv-exchange;
+  }
+}
+.stgv-ticket {
+  &:before {
+    content: $stgv-ticket;
+  }
+}
+.stgv-chevrron {
+  &:before {
+    content: $stgv-chevrron;
+  }
+}
+.stgv-chevrron-light {
+  &:before {
+    content: $stgv-chevrron-light;
+  }
+}
+.stgv-arrow {
+  &:before {
+    content: $stgv-arrow;
+  }
+}
+.stgv-facebook {
+  &:before {
+    content: $stgv-facebook;
+  }
+}
+.stgv-Instagram {
+  &:before {
+    content: $stgv-Instagram;
+  }
+}
+.stgv-LinkedIn {
+  &:before {
+    content: $stgv-LinkedIn;
+  }
+}
+.stgv-YouTube {
+  &:before {
+    content: $stgv-YouTube;
+  }
+}
+.stgv-Twitter {
+  &:before {
+    content: $stgv-Twitter;
+  }
+}

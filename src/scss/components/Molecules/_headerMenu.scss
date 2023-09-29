@@ -1,0 +1,95 @@
+.uam_headerMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  &_mainLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 35px;
+    padding: 24px;
+    color: $color-white;
+
+    li {
+      text-align: center;
+
+      ul {
+        display: none;
+        font-size: 24px;
+        line-height: 34px;
+        text-transform: none;
+
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $screen-m-min) {
+    height: 100%;
+
+    &_linkList {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    &_mainLink,
+    &_switchLangue {
+      flex-direction: row;
+    }
+
+    &_mainLink {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      column-gap: 16px;
+      flex: auto;
+      justify-content: space-evenly;
+
+      > li > a {
+        display: inline-flex;
+        align-items: center;
+        column-gap: 9px;
+
+        &::before {
+          font-size: 12px;
+          @include fontIcon();
+          content: $stgv-arrow;
+        }
+      }
+
+      li ul {
+        position: absolute;
+        background-color: rgba($color-grey, 0.8);
+        font-size: 16px;
+        padding: 8px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $screen-xl-min) {
+    &_mainLink {
+      column-gap: 50px;
+      justify-content: center;
+    }
+  }
+}
+
+.uam_headerMenuLink,
+.uam_headerMenu_switchLangue a {
+  font-family: $font-Montserrat;
+  font-weight: bold;
+  font-size: 24px;
+
+  @media screen and (min-width: $screen-m-min) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: none;
+  }
+}

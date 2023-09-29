@@ -1,0 +1,105 @@
+.uam_footerFooter {
+  &_socialNetworksLinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+
+    a {
+      color: $color-white;
+      font-size: 24px;
+
+      &:hover {
+        color: $color-orange;
+      }
+    }
+  }
+
+  &_line {
+    height: 1px;
+    width: 100%;
+    position: relative;
+    margin-top: 32px;
+    margin-bottom: 16px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      height: 1px;
+      margin-top: -1px;
+      width: 100%;
+      background-color: $color-white;
+    }
+  }
+
+  &_copyright {
+    span {
+      display: block;
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    &_socialNetworksLinks {
+      justify-content: flex-end;
+      column-gap: 16px;
+    }
+
+    &_copyright {
+      flex: auto;
+
+      span {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-right: 40px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $screen-m-min) {
+    position: relative;
+    display: flex;
+    padding-top: 34px;
+
+    &_socialNetworksLinks {
+      order: 2;
+      flex-wrap: nowrap;
+    }
+
+    &_line {
+      position: absolute;
+      top: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      height: 29px;
+
+      &::before {
+        width: auto;
+        left: 0;
+        right: 1px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        height: 29px;
+        width: 36px;
+        background-image: url('../images/Fleches.svg');
+        background-position: right center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

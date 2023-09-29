@@ -1,0 +1,54 @@
+// Colors
+$main-color: #01b0f0;
+$menu-small-color: #223645;
+
+$color-white: #ffffff;
+$color-light-white: rgba(255, 255, 255, 0.3);
+$color-medium-white: #f0f0f0;
+$color-dark-white: #edf0f2;
+$color-grey: #293337;
+$color-grey-3a: #3a4549;
+$color-grey-eb: #ebebeb;
+$color-light-grey: #e2e2e2;
+$color-medium-grey: rgba(4, 7, 8, 0.1);
+$color-orange: #ff3d00;
+$color-dark-orange: #e63903;
+$color-black: #000;
+$color-light-black: rgba(0, 0, 0, 0.25);
+$color-medium-black: rgba(0, 0, 0, 0.8);
+$color-blue: #1ea8c2;
+$color-grey-background: #f4f4f4;
+$color-green: #00af5b;
+$color-red: #e91313;
+
+//Fonts
+$font-Eagle: 'Eagle';
+$font-Teko: 'Teko';
+$font-Montserrat: 'Montserrat';
+$font-icon: 'fonticon-saintgervais';
+
+// Responsive
+// size trigger
+$screen-xl: 1600px;
+$screen-l: 1200px;
+$screen-m: 992px;
+$screen-s: 768px;
+$screen-xs: 576px;
+
+// break point trigger
+$screen-xl-min: $screen-xl;
+$screen-l-max: $screen-xl-min - 1;
+$screen-l-min: $screen-l;
+$screen-m-max: $screen-l-min - 1;
+$screen-m-min: $screen-m;
+$screen-s-max: $screen-m-min - 1;
+$screen-s-min: $screen-s;
+$screen-xs-max: $screen-s-min - 1;
+$screen-xs-min: $screen-xs;
+$screen-xxs-max: $screen-xs-min - 1;
+
+// Content Size
+$content-l: 1140px;
+$content-m: 940px;
+$content-s: 720px;
+$content-xs: 100%;

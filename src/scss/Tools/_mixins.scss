@@ -1,0 +1,29 @@
+// to set icon font
+@mixin fontIcon {
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// icon
+@mixin contentIcon($icon: $stgv-calendar, $display: inline-flex) {
+  content: $icon;
+  display: $display;
+  font-family: $icomoon-font-family;
+}
+
+@mixin fontSize($size, $lineHeight: ($size + 4px)) {
+  font-size: $size;
+  line-height: $lineHeight;
+}
+
+@mixin fontStyle($weight, $size, $lineHeight: ($size + 4px)) {
+  @include fontSize($size, $lineHeight);
+  font-weight: $weight;
+}

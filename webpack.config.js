@@ -9,7 +9,7 @@ module.exports = {
     filename: 'app.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: './',
-    assetModuleFilename: 'images/[name][ext][query]',
+    assetModuleFilename: './assets/[name][ext][query]',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -20,6 +20,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/,
+        loader: 'html-loader',
+      },
+      {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
@@ -28,7 +32,11 @@ module.exports = {
         ],
       },
       {
-        test: /\.(?:ico\gif|png|jpg|jpeg)$/i,
+        test: /\.(?:ico|gif|png|jpe?g|svg)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /fonts\/*\/\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         type: 'asset/resource',
       },
     ],

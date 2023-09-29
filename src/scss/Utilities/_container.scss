@@ -1,0 +1,10 @@
+.uam_container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $screen-m-min) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
