@@ -3,7 +3,7 @@ Ce projet est un teste pour les intégrateur qui postule dans l'équipe UAM
 
 Réalisé la page de la home à l'aide de la mauqette : [Makette](https://www.figma.com/file/LmSsJRh9ahz9HrX2JHftrO/St-gervais-Test?node-id=1204%3A5575&mode=dev)
 
-Pour rendre le projet, vous pouvez rendre un **zip**, ou alors forker le projet et faite une **Pull request** sur le repot principale.
+Pour rendre le projet, vous devez sous forme de **zip**
 
 ## Instaltion
 
@@ -14,18 +14,29 @@ Il y a deux type d'instalation
 
 * Avec les sources **static** : Vous disposer d'un zip avec les soures static. Vous pouvez y ajouter votre style css, js et html tout simplement.
 
-### instal with npm
+### Instalation avec npm/yarn
 
-Install library
-  yarn
+Télécharger les librairies
 
-Compile and watch change
-  yarn dev
+    yarn
 
-The site will be generated in `/dist` with index : `/dist/index.html`
+Compiler la page et écouter les chagements (recompilation automatique)
 
-The all code is in de file `/src`.
+    yarn dev
 
-* sass : is in atomic design component, but you can add your sass file and work as you like
-* js : add your js library with yarn or npm. Do wart you can do.
-* image : is the `/src/images` file 
+La page seras complilé dans le dossier `/dist` avec le fichier `/dist/index.html`
+
+Tout le code sources ce trouve dans `/src`.
+
+* sass : est sous forme de component et en atomic design, mais vous pouvez ajouter votre scss comme vous le desirer 
+* js : vous etes libre d'utiliser les librairies que vous voulez.
+* image : les images sont dans le dossier `/src/images`
+
+### Instalation sans npm/yarn
+
+Tout le code de la page est dans le dossier `/dist`
+
+
+## Pour le rendu du test
+
+Le teste est a ranvoyer par mail, vous devez compresser l'entierter du projet (`dist` et `src`) dans un **zip**
