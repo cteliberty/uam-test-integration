@@ -1,5 +1,5 @@
 # uam-test-integration
-Bienvenue sur le projet de test des postulants en intégration web, pour l'équipe UAM
+Bienvenue sur le projet de test des postulants en intégration web (équipe UAM)
 
 Il vous faudra réaliser une page d'accueil à l'aide de la maquette ci-jointe : [ICI](https://www.figma.com/file/LmSsJRh9ahz9HrX2JHftrO/St-gervais-Test?node-id=1204%3A5575&mode=dev)
 
