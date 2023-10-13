@@ -1,15 +1,13 @@
 // Settings [no css generation]
 // @import '../utils/variables';
-@import 'setting/_fonts';
-@import 'setting/_variables';
+@import 'setting/fonts';
+@import 'setting/variables';
 
 // Tools [no css generation]
 @import 'Tools/mixins';
 
 // Layout
-@import 'layout/sortCode';
-@import 'layout/_header';
-@import 'layout/_btn';
+@import 'layout/header';
 
 //base
 @import 'base/reset';
@@ -17,8 +15,6 @@
 @import 'base/link';
 
 // - Atoms
-@import 'components/Atoms/button';
-@import 'components/Atoms/label';
 @import 'components/Atoms/headerLogo';
 @import 'components/Atoms/headerMenuIcon';
 @import 'components/Atoms/footerTitle';

@@ -48,9 +48,8 @@
 
 /* Font icon */
 @font-face {
-  font-family: 'fonticon-saintgervais';
-  src: url('../fonts/fonticon-saintgervais.woff?q0p1lc')
-    format('woff');
+  font-family: 'fonticon-site';
+  src: url('../fonts/fonticon-site.woff?q0p1lc') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -59,7 +58,7 @@
 [class^='uam_icon-'],
 [class*=' uam_icon-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'fonticon-saintgervais' !important;
+  font-family: 'fonticon-site' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;

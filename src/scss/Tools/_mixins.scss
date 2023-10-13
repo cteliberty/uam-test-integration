@@ -12,7 +12,7 @@
 }
 
 // icon
-@mixin contentIcon($icon: $stgv-calendar, $display: inline-flex) {
+@mixin contentIcon($icon: $site-calendar, $display: inline-flex) {
   content: $icon;
   display: $display;
   font-family: $icomoon-font-family;

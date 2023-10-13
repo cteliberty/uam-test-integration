@@ -1,17 +1,20 @@
-@import "variables";
+@import 'variables';
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?yf6pny') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?yf6pny') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?yf6pny##{$icomoon-font-family}') format('svg');
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?yf6pny')
+      format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?yf6pny')
+      format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?yf6pny##{$icomoon-font-family}')
+      format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="stgv-"], [class*=" stgv-"] {
+[class^='site-'],
+[class*=' site-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: '#{$icomoon-font-family}' !important;
   speak: never;
@@ -26,143 +29,143 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.stgv-telepherique {
+.site-telepherique {
   &:before {
-    content: $stgv-telepherique;
+    content: $site-telepherique;
   }
 }
-.stgv-warning {
+.site-warning {
   &:before {
-    content: $stgv-warning;
+    content: $site-warning;
   }
 }
-.stgv-star {
+.site-star {
   &:before {
-    content: $stgv-star;
+    content: $site-star;
   }
 }
-.stgv-snow {
+.site-snow {
   &:before {
-    content: $stgv-snow;
+    content: $site-snow;
   }
 }
-.stgv-beginer {
+.site-beginer {
   &:before {
-    content: $stgv-beginer;
+    content: $site-beginer;
   }
 }
-.stgv-line_arrow {
+.site-line_arrow {
   &:before {
-    content: $stgv-line_arrow;
+    content: $site-line_arrow;
   }
 }
-.stgv-family {
+.site-family {
   &:before {
-    content: $stgv-family;
+    content: $site-family;
   }
 }
-.stgv-persone {
+.site-persone {
   &:before {
-    content: $stgv-persone;
+    content: $site-persone;
   }
 }
-.stgv-flash {
+.site-flash {
   &:before {
-    content: $stgv-flash;
+    content: $site-flash;
   }
 }
-.stgv-plain {
+.site-plain {
   &:before {
-    content: $stgv-plain;
+    content: $site-plain;
   }
 }
-.stgv-train {
+.site-train {
   &:before {
-    content: $stgv-train;
+    content: $site-train;
   }
 }
-.stgv-car {
+.site-car {
   &:before {
-    content: $stgv-car;
+    content: $site-car;
   }
 }
-.stgv-calendar {
+.site-calendar {
   &:before {
-    content: $stgv-calendar;
+    content: $site-calendar;
   }
 }
-.stgv-menu {
+.site-menu {
   &:before {
-    content: $stgv-menu;
+    content: $site-menu;
   }
 }
-.stgv-cross {
+.site-cross {
   &:before {
-    content: $stgv-cross;
+    content: $site-cross;
   }
 }
-.stgv-cart {
+.site-cart {
   &:before {
-    content: $stgv-cart;
+    content: $site-cart;
   }
 }
-.stgv-user {
+.site-user {
   &:before {
-    content: $stgv-user;
+    content: $site-user;
   }
 }
-.stgv-help {
+.site-help {
   &:before {
-    content: $stgv-help;
+    content: $site-help;
   }
 }
-.stgv-exchange {
+.site-exchange {
   &:before {
-    content: $stgv-exchange;
+    content: $site-exchange;
   }
 }
-.stgv-ticket {
+.site-ticket {
   &:before {
-    content: $stgv-ticket;
+    content: $site-ticket;
   }
 }
-.stgv-chevrron {
+.site-chevrron {
   &:before {
-    content: $stgv-chevrron;
+    content: $site-chevrron;
   }
 }
-.stgv-chevrron-light {
+.site-chevrron-light {
   &:before {
-    content: $stgv-chevrron-light;
+    content: $site-chevrron-light;
   }
 }
-.stgv-arrow {
+.site-arrow {
   &:before {
-    content: $stgv-arrow;
+    content: $site-arrow;
   }
 }
-.stgv-facebook {
+.site-facebook {
   &:before {
-    content: $stgv-facebook;
+    content: $site-facebook;
   }
 }
-.stgv-Instagram {
+.site-Instagram {
   &:before {
-    content: $stgv-Instagram;
+    content: $site-Instagram;
   }
 }
-.stgv-LinkedIn {
+.site-LinkedIn {
   &:before {
-    content: $stgv-LinkedIn;
+    content: $site-LinkedIn;
   }
 }
-.stgv-YouTube {
+.site-YouTube {
   &:before {
-    content: $stgv-YouTube;
+    content: $site-YouTube;
   }
 }
-.stgv-Twitter {
+.site-Twitter {
   &:before {
-    content: $stgv-Twitter;
+    content: $site-Twitter;
   }
 }

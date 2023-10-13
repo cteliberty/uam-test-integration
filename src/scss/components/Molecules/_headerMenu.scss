@@ -59,7 +59,7 @@
         &::before {
           font-size: 12px;
           @include fontIcon();
-          content: $stgv-arrow;
+          content: $site-arrow;
         }
       }
 

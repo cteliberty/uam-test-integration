@@ -60,7 +60,7 @@
   &_account {
     .icon {
       &::before {
-        content: $stgv-user;
+        content: $site-user;
       }
     }
   }
@@ -68,7 +68,7 @@
   &_cart {
     .icon {
       &::before {
-        content: $stgv-cart;
+        content: $site-cart;
       }
     }
   }
