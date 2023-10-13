@@ -35,7 +35,7 @@ Tout le code sources ce trouve dans `/src`.
 ### Instalation sans npm/yarn
 
 Tout le code de la page est dans le dossier `/dist`
-
+Et les images sources ce trouve dans `src/images`
 
 ## Pour le rendu du test
 
