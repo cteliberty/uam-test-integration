@@ -19,5 +19,9 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch"
+  },
+  "dependencies": {
+    "glider-js": "^1.7.8",
+    "gsap": "^3.12.2"
   }
 }

@@ -14,6 +14,11 @@
     color: $color-orange;
   }
 
+  &_subtitle {
+    font-family: $font-Montserrat;
+    @include fontStyle(400, 25px, 25px);
+  }
+
   &_title {
     @include fontStyle(700, 30px, 35px);
     margin-bottom: 5px;

@@ -52,3 +52,12 @@ $content-l: 1140px;
 $content-m: 940px;
 $content-s: 720px;
 $content-xs: 100%;
+
+// Morgan's rules
+// 1. Global paddings
+$small-padding: 10px;
+$normal-padding: 20px;
+// 2. Transition time
+$transition-time: 0.5s;
+// 3. Shadow box
+$shadow-box: 5px 5px 10px -5px rgba(0, 0, 0, 0.2);

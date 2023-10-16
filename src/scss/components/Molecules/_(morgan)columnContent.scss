@@ -1,0 +1,99 @@
+.uam_columnContent {
+
+  &_offer {
+    :first-child {
+      color: $color-blue;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    :last-child {
+      background-color: $color-blue;
+      color: $color-white;
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+  }
+
+  &_title {
+    font-family: $font-Eagle;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &_offer,
+  &_description {
+    font-family: $font-Montserrat;
+  }
+
+  &_description {
+    margin-bottom: 40px;
+  }
+
+  &_button {
+    margin-right: 10px;
+    &.orange {
+      button {
+        background-color: $color-orange;
+        border: 0;
+        color: $color-white;
+      }
+    }
+    button {
+      border: 1px solid $color-grey;
+      border-radius: 20px;
+      font-family: $font-Montserrat;
+      padding: 10px 15px;
+      transition: background-color $transition-time, color $transition-time;
+      &:hover {
+        background-color: $color-grey;
+        color: $color-white;
+      }
+    }
+  }
+
+  // width > 992px
+  @media screen and (min-width: $screen-s-min) {
+
+    &_offer {
+      @include fontStyle(700, 20px, 32px);
+    }
+
+    &_title {
+      @include fontStyle(700, 35px, 45px);
+    }
+
+    &_description {
+      @include fontStyle(400, 22px, 32px);
+    }
+
+    &_button {
+      button {
+        @include fontStyle(700, 18px, 25px);
+      }
+    }
+  }
+
+  // width < 992px
+  @media screen and (max-width: $screen-m-min) {
+
+    &_offer {
+      @include fontStyle(700, 16px, 22px);
+    }
+
+    &_title {
+      @include fontStyle(700, 25px, 35px);
+    }
+
+    &_description {
+      @include fontStyle(400, 16px, 26px);
+    }
+
+    &_button {
+      button {
+        @include fontStyle(700, 18px, 25px);
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.uam_cardTitle {
+  color: $color-white;
+
+  &_title {
+    font-family: $font-Teko;
+    margin-top: 0;
+  }
+
+  &_subtitle,
+  &_description {
+    font-family: $font-Montserrat;
+    margin-top: 0;
+  }
+
+  &_title {
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: $screen-s-min) {
+
+    &_title {
+      @include fontStyle(400, 20px, 20px);
+    }
+
+    &_subtitle {
+      @include fontStyle(400, 22px, 32px);
+    }
+
+    &_description {
+      @include fontStyle(400, 16px, 20px);
+    }
+  }
+
+  @media screen and (max-width: $screen-m-min) {
+
+    &_title {
+      @include fontStyle(700, 20px, 20px);
+    }
+
+    &_subtitle {
+      @include fontStyle(400, 16px, 20px);
+    }
+
+    &_description {
+      @include fontStyle(400, 14px, 20px);
+      font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.uam_cardContent {
+
+  padding: $small-padding;
+  position: relative;
+  $self: &;
+
+  .uam_cardPriceButton {
+    background-color: $color-orange;
+    color: $color-white;
+    display: none;
+    font-family: $font-Montserrat;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transform: translateY(-100%);
+    width: 100%;
+    @include fontStyle(700, 18px, 25px);
+  }
+
+  &_description {
+    font-family: $font-Montserrat;
+    padding: 0 0 $small-padding;
+    @include fontStyle(400, 16px, 26px);
+  }
+  
+  .uam_cardFooter {
+    align-items: center;
+    border-top: 1px solid $color-grey-background;
+    column-gap: $small-padding;
+    display: flex;
+    padding-top: $small-padding;
+    &_price,
+    &_priceBefore {
+      font-family: $font-Montserrat;
+    }
+    &_price {
+      @include fontStyle(700, 24px, 32px);
+    }
+    &_priceBefore {
+      @include fontStyle(400, 16px, 26px);
+      text-decoration: line-through;
+    }
+    &_cart {
+      cursor: pointer;
+      margin-left: auto;
+      span {
+        color: $color-orange;
+        font-size: 24px;
+      }
+    }
+  }
+  
+  // width < 992px
+  @media screen and (max-width: $screen-m-min) {
+    .uam_cardPriceButton {
+      display: inline-block;
+    }
+    .uam_cardFooter {
+      &_priceBefore {
+        margin-left: auto;
+      }
+      &_cart {
+        display: none;
+      }
+    }
+  }
+
+}
