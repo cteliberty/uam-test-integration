@@ -1,0 +1,27 @@
+.uam_cards {
+  margin-top: -5%;
+  padding-bottom: $normal-padding;
+  position: relative;
+  z-index: 2;
+  $self: &;
+  
+  &Item {
+    background-color: $color-white;
+    -webkit-box-shadow: $shadow-box; 
+    box-shadow: $shadow-box;
+    transition: $transition-time transform;
+    &:hover {
+      transform: translateY(-5px);
+      .uam_cardImage {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .glider-track {
+    display: flex;
+    gap: 20px;
+  }
+}

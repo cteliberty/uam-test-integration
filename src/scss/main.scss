@@ -22,18 +22,28 @@
 // - Molecules
 @import 'components/Molecules/headerMenu';
 @import 'components/Molecules/blockHeaderTitle';
+@import 'components/Molecules/(morgan)cardTitle';
+@import 'components/Molecules/(morgan)columnContent';
 @import 'components/Molecules/footerDomaine';
 @import 'components/Molecules/footerPayment';
 @import 'components/Molecules/footerLinkList';
 
 // - Organisms
+@import 'components/Organisms/(morgan)cardHeader';
+@import 'components/Organisms/(morgan)cardContent';
+@import 'components/Organisms/(morgan)grid';
 @import 'components/Organisms/footerLinks';
 @import 'components/Organisms/footerFooter';
 
 // - Template
 @import 'components/Template/blockHeader';
+@import 'components/Template/(morgan)cards';
+@import 'components/Template/(morgan)coloredSection';
 @import 'components/Template/footer';
 
 // Utilities
 @import 'Utilities/sortCode';
 @import 'Utilities/container';
+
+// Glider
+@import "/node_modules/glider-js/glider.min.css";

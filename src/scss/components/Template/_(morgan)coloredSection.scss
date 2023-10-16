@@ -1,0 +1,6 @@
+.uam_coloredSection {
+  background-color: $color-grey-background;
+  -webkit-clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 50%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  padding: 200px 0;
+}
